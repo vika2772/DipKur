@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WikiArea</title>
+    <link rel="stylesheet" href="dippr.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="fill-green">
+      <div class="logo-section">
+        <span>WikiArea</span>
+        <img src="..\rashod\rabbit.png" alt="WikiArea Logo" />
+      </div>
+
+      <div class="logo-section">
+        <div class="lk" lang="ru">
+          <h2 lang="ru">Личный кабинет</h2>
+        </div>
+        <button id="menuButton">
+          <img class="menu-img" src="../rashod/меню.png" alt="" />
+        </button>
+      </div>
+
+      <nav id="menu" class="menu">
+        <!-- Список меню -->
+        <ul>
+          <li><a href="mainprepod.html" lang="ru">Личный кабинет</a></li>
+          <li><a href="myproject.html" lang="ru">Мои проекты</a></li>
+          <li><a href="#" lang="ru">Аналитика</a></li>
+          <li><a href="#" lang="ru">Выход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="block user-info border-green fill-orange">
+        <div class="icon-box">
+          <img src="../rashod/иконка.png" alt="User Icon" />
+        </div>
+        <div class="login-name">
+          <span>login</span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="personal-info block border-green fill-green">
+          <div class="user-info fill-green">
+            <div class="icon-box">
+              <img src="../rashod/иконка.png" alt="User Icon" />
+            </div>
+            <div class="login-name" lang="ru">
+              <h2>Учетная запись</h2>
+            </div>
+          </div>
+
+          <form>
+            <label for="firstName" lang="ru"></label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Имя..."
+              name="firstName" />
+
+            <label for="lastName" lang="ru">Фамилия</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Фамилия..."
+              name="lastName" />
+
+            <label for="birthdate" lang="ru">Дата рождения</label>
+            <input type="date" id="birthdate" name="birthdate" />
+
+            <button class="button border-white fill-orange" lang="ru" type="submit">
+              Сохранить
+            </button>
+          </form>
+        </div>
+
+        <div class="password block border-orange fill-orange">
+          <div class="user-info fill-orange">
+            <div class="icon-box">
+              <img src="../rashod/замок.png" alt="User Icon" />
+            </div>
+            <div class="login-name" lang="ru">
+              <h2>Пароль</h2>
+            </div>
+          </div>
+          <form>
+            <!-- Password Inputs -->
+            <label for="currentPassword" lang="ru">Текущий пароль</label>
+            <input
+              type="password"
+              id="currentPassword"
+              name="currentPassword"
+              placeholder="Текущий пароль" />
+
+            <label for="newPassword" lang="ru">Новый пароль</label>
+            <input
+              type="password"
+              id="newPassword"
+              name="newPassword"
+              placeholder="Новый пароль" />
+
+            <label for="confirmPassword" lang="ru">Повторите пароль</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Повторите пароль" />
+
+            <button class="button fill-green border-white" lang="ru" type="submit">
+              Сохранить
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="additional-info block border-orange fill-green">
+        <div class="user-info fill-green">
+          <div class="icon-box">
+            <img src="../rashod/доп данные.png" alt="User Icon" />
+          </div>
+          <div class="login-name" lang="ru">
+            <h2>Дополнительная информация</h2>
+          </div>
+        </div>
+        <div class="additional-data">
+          <div class="entry-block"></div>
+          <form class="additional-data">
+            <!-- Additional Info Inputs -->
+            <label for="gender" lang="ru">Пол</label>
+            <select id="gender" name="gender">
+              <option value="male" lang="ru">Мужской</option>
+              <option value="female" lang="ru">Женский</option>
+            </select>
+
+            <label for="phone" lang="ru">Номер телефона</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Номер телефона..."
+              name="phone" />
+
+            <button class="button fill-orange border-white" lang="ru" type="submit">
+              Сохранить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/functionpas.js"></script>
+    <script src="../js/functionpas.js"></script>
+    <script src="../js/functionpas3.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>
