@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dippr.css" />
+  </head>
+  
+  <body>
+    <class="my">
+    <header class="fill-green">
+      <div class="logo-section" lang="en">
+        <span>WikiArea</span>
+        <img src="../rashod/rabbit.png" alt="WikiArea Logo" />
+      </div>
+
+      <div class="logo-section">
+        <div class="lk">
+          <h2 lang="ru">Мои проекты</h2>
+        </div>
+        <button id="menuButton">
+          <img class="menu-img" src="../rashod/меню.png" alt="" />
+        </button>
+      </div>
+
+      <nav id="menu" class="menu">
+        <!-- Список меню -->
+        <ul>
+          <li><a href="mainprepod.html" lang="ru">Личный кабинет</a></li>
+          <li><a href="myproject.html" lang="ru">Мои проекты</a></li>
+          <li><a href="#" lang="ru">Аналитика</a></li>
+          <li><a haref="#" lang="ru">Выход</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+    <div class="container">
+      <div class="search-box block fill-green">
+        <label for="search" lang="ru">Поиск:</label>
+        <input type="text" id="search"  />
+      </div>
+
+      <div class="project-area block border-orange">
+        <div class="add-filter">
+            <button class="button  fill-green border-orange" type="button" lang="ru" onclick="window.location.href='addproject.html';">
+              Добавить проект
+            </button>
+          <div class="filter block fill-green">
+            <label for="filter-select" lang="ru">Фильтровать:</label>
+            <select id="filter-select" onchange="">
+              <option value="alphabet" lang="ru">По алфавиту</option>
+              <option value="moduleCount" lang="ru">По количеству модулей</option>
+              <option value="urgency" lang="ru">По срочности закрытия</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="project-list">
+          <!-- Project items will be inserted here -->
+          <div class="project-item fill-orange block">
+            <div class="project-info">
+              <div class="project-item-stat">
+                <p class="project-module" lang="ru">Курс 10 модулей</p>
+                <p class="project-subtitle" lang="ru">Доступ: беспрочный</p>
+              </div>
+              <p>Какое-то название</p>
+              <div class="project-controls">
+                <button class="button border-white fill-green edit-project" lang="ru">
+                  Изменить
+                </button>
+                <button class="button border-white fill-green delete-project" lang="ru">
+                  Удалить
+                </button>
+              </div>
+            </div>
+
+            <div class="project-description">
+              <button class="button fill-orange border-orange toggle-description" lang="ru">Описание ▼</button>
+              <p class="project-description-text" lang="ru">В чём смысл Яса и...скороходов</p>
+            </div>
+          </div>
+          <!-- Repeat the .project-item for each project -->
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/accardion.js"></script>
+  </div>
+  </body>
+
+</html>
